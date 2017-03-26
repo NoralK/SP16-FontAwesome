@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="255b78e7-3963-4a81-919e-d535db1601db" solutionId="255b78e7-3963-4a81-919e-d535db1601db" resetWebServer="false" sharePointProductVersion="16.0" name="FontAwesome" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="85eaa82d-1038-4316-b4af-dcd6fc68d7d5" />
+    <featureReference itemId="4cdd43cb-630a-4757-94ea-304ff6407d83" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="e2e18f8f-2133-4083-8912-22cc4a188204" />
+    <projectItemReference itemId="74c91242-6ee3-4eb4-88c6-2dea6da2f176" />
+  </projectItems>
+</package>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Control Id="AdditionalPageHead"
+           Sequence="90"
+           ControlSrc="~/_CONTROLTEMPLATES/15/FontAwesome/4.7.0/FontAwesome_4_7_0.ascx" />
+
+</Elements>

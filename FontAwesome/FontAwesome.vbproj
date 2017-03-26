@@ -1,0 +1,173 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B09680A-F5DB-4370-9401-8115281BCC20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FontAwesome</RootNamespace>
+    <AssemblyName>FontAwesome</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{D59BE175-2ED0-4C54-BE3D-CDAA9F3214C8};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FontAwesome.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FontAwesome.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>FontAwesome.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>FontAwesome.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\FontAwesome\4.7.0\FontAwesome_4_7_0.ascx.designer.vb">
+      <DependentUpon>FontAwesome_4_7_0.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\FontAwesome\4.7.0\FontAwesome_4_7_0.ascx.vb">
+      <DependentUpon>FontAwesome_4_7_0.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\FontAwesome\4.6.1\FontAwesome_4_6_1.ascx.designer.vb">
+      <DependentUpon>FontAwesome_4_6_1.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\FontAwesome\4.6.1\FontAwesome_4_6_1.ascx.vb">
+      <DependentUpon>FontAwesome_4_6_1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controls_4_7_0\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6562b12e-d098-447d-9664-65ae2f6e029d}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{74c91242-6ee3-4eb4-88c6-2dea6da2f176}</SharePointProjectItemId>
+    </None>
+    <None Include="Controls_4_6_1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cb48901-3d09-49cf-a4ad-9017dc89c16e}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature_4_6_1\Feature_4_6_1.feature">
+      <FeatureId>{4cdd43cb-630a-4757-94ea-304ff6407d83}</FeatureId>
+    </None>
+    <None Include="Features\Feature_4_7_0\Feature_4_7_0.feature">
+      <FeatureId>{85eaa82d-1038-4316-b4af-dcd6fc68d7d5}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\FontAwesome\4.6.1\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\FontAwesome\4.6.1\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\FontAwesome\4.6.1\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\FontAwesome\4.6.1\fonts\fontawesome-webfont.woff2" />
+    <None Include="Layouts\FontAwesome\4.6.1\fonts\FontAwesome.otf" />
+    <None Include="Layouts\FontAwesome\4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\FontAwesome\4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\FontAwesome\4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\FontAwesome\4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="Layouts\FontAwesome\4.7.0\fonts\FontAwesome.otf" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2e18f8f-2133-4083-8912-22cc4a188204}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{255b78e7-3963-4a81-919e-d535db1601db}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Controls_4_7_0\Elements.xml" />
+    <Content Include="ControlTemplates\FontAwesome\4.7.0\FontAwesome_4_7_0.ascx" />
+    <Content Include="Controls_4_6_1\Elements.xml" />
+    <Content Include="ControlTemplates\FontAwesome\4.6.1\FontAwesome_4_6_1.ascx" />
+    <Content Include="Features\Feature_4_6_1\Feature_4_6_1.Template.xml">
+      <DependentUpon>Feature_4_6_1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature_4_7_0\Feature_4_7_0.Template.xml">
+      <DependentUpon>Feature_4_7_0.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\FontAwesome\4.6.1\css\font-awesome.min.css" />
+    <Content Include="Layouts\FontAwesome\4.6.1\fonts\fontawesome-webfont.svg" />
+    <Content Include="Layouts\FontAwesome\4.7.0\css\font-awesome.min.css" />
+    <Content Include="Layouts\FontAwesome\4.7.0\fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
